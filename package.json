@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.10",
+    "@chakra-ui/react": "^2.3.4",
+    "@chakra-ui/theme-tools": "^2.0.11",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "framer-motion": "^7.3.6",
+    "next": "^12.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "three": "^0.144.0"
+  },
+  "name": "frontendini",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "start": "next start",
+    "build": "next build",
+    "prettier": "prettier -write .",
+    "lint": "next lint",
+    "lintfix": "next lint --fix"
+  },
+  "keywords": [],
+  "author": "Dominik dini Apel",
+  "license": "MIT",
+  "description": "dinis first website",
+  "devDependencies": {
+    "eslint": "^8.23.1",
+    "eslint-config-next": "^12.3.1",
+    "prettier": "^2.7.1"
+  }
+}
