@@ -58,7 +58,7 @@ const Page = () => {
                     </Paragraph>
                     <Box align={"center"} my={4}>
                         <NextLink href={"/works"}>
-                            <Button rightIcon={<ChevronRightIcon/>} colorScheme={"teal"}>
+                            <Button rightIcon={<ChevronRightIcon/>} colorScheme={'purple'}>
                                 My portfolio
                             </Button>
                         </NextLink>
@@ -96,14 +96,14 @@ const Page = () => {
                     <List>
                         <ListItem>
                             <NextLink href={"https://github.com/yuuuudini"} target={"_blank"}>
-                                <Button variant={"ghost"} colorScheme={"teal"} leftIcon={<Icon as={IoLogoGithub}/>}>
+                                <Button variant={"ghost"} colorScheme={"purple"} leftIcon={<Icon as={IoLogoGithub}/>}>
                                     @yuuuudini
                                 </Button>
                             </NextLink>
                         </ListItem>
                         <ListItem>
                             <NextLink href={"https://instagram.com/yuuuudini"} target={"_blank"}>
-                                <Button variant={"ghost"} colorScheme={"teal"} leftIcon={<Icon as={IoLogoInstagram}/>}>
+                                <Button variant={"ghost"} colorScheme={"purple"} leftIcon={<Icon as={IoLogoInstagram}/>}>
                                     @yuuuudini
                                 </Button>
                             </NextLink>
@@ -111,7 +111,7 @@ const Page = () => {
                         <ListItem>
                             <NextLink href={"https://www.discordapp.com/users/294916935546830849"} target={"_blank"}
                                   disable={true}>
-                                <Button variant={"ghost"} colorScheme={"teal"} leftIcon={<Icon as={IoLogoDiscord}/>}>
+                                <Button variant={"ghost"} colorScheme={"purple"} leftIcon={<Icon as={IoLogoDiscord}/>}>
                                     yuuuudini#0001
                                 </Button>
                             </NextLink>

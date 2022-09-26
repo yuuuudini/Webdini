@@ -20,14 +20,20 @@ import ThemeToggleButton from "./theme-toggle-button";
 const LinkItem = ({href, path, children}) => {
     const active = path === href
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+    const activeColor = useColorModeValue('#6B46C1', '#D6BCFA')
     return (
         <NextLink href={href}>
-            <Link
-                p={2}
-                bg={active ? 'glassTeal' : undefined}
-                color={active ? '#202023' : inactiveColor}>
-                {children}
-            </Link>
+            <Box
+                 bg={active ? activeColor : undefined}
+                 style={{borderRadius: "10px"}}
+            >
+                <Link
+                    p={2}
+                    color={active ? '#202023' : inactiveColor}
+                >
+                    {children}
+                </Link>
+            </Box>
         </NextLink>
     )
 }
@@ -63,7 +69,7 @@ const Navbar = props => {
                     width={{base: 'full', md: 'auto'}}
                     alignItems={"center"}
                     flexGrow={1}
-                    mt={{ base: 4, nmd: 0}}
+                    mt={{base: 4, nmd: 0}}
                 >
                     <LinkItem href={"/"} path={path}>
                         About me
