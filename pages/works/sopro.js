@@ -7,7 +7,7 @@ import Layout from '../../components/layouts/article'
 const Work = () => {
     return (
         <Layout title={"Manim"}>
-            <Container>
+            <Container maxW={"700px"}>
                 <Title>
                     Manim <Badge>2022</Badge>
                 </Title>

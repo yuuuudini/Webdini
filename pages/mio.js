@@ -5,7 +5,7 @@ import {Container, Divider, Heading} from "@chakra-ui/react";
 const Mio = () => {
     return (
         <Layout>
-            <Container>
+            <Container maxW={'900px'}>
                 <Divider useColor margin={"15px"}/>
                 <Heading as={"h3"} fontSize={20} mb={4}>
                     Mio coming soon!

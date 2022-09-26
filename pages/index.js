@@ -1,4 +1,4 @@
-import {Container, Box, Heading, Icon, List, ListItem, Image, Button, Divider} from '@chakra-ui/react'
+import {Container, Box, Heading, Icon, List, ListItem, Image, Button, Divider, Link} from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from "../components/paragraph"
 import NextLink from "next/link";
@@ -10,20 +10,30 @@ import {
     IoLogoGithub,
     IoLogoDiscord
 } from "react-icons/io5";
-import Link from "next/link";
+
 
 const Page = () => {
     return (
         <Layout>
-            <Container>
-                <Divider my={"15px"} as={"h3"}/>
+            <Container maxW={'900px'}>
+                <Divider my={"15px"}/>
 
                 <Box display={{md: 'flex'}}>
-                    <Box flexGrow={1}>
+                    <Box flexGrow={1} >
                         <Heading as={"h2"} variant={"page-title"}>
                             Dominik &apos;dini&apos; Apel
                         </Heading>
-                        <p> Computer Science Student </p>
+                        <Heading variant={"looks-cool"}>
+                            Computer Science Student
+                        </Heading>
+                        <Divider my={"15px"}/>
+                        <Paragraph>
+                            Hey! You might know me - or not, I&apos;m
+                            just some random coding human being, trying to get better in frontend development.
+                            This homepage will grow and become (hopefully) better from time to time.
+                            This website is based on a tutorial from Takuya Matsuyama, check him out on {' '}
+                            <Link href={'https://www.youtube.com/c/devaslife'}>Youtube</Link>.
+                        </Paragraph>
                     </Box>
                     <Section valueX={10} delay={0.1}>
                         <Box flexShrink={0} mt={{base: 4, md: 0}} ml={{md: 6}} align={"center"}>
@@ -85,25 +95,26 @@ const Page = () => {
                     </Heading>
                     <List>
                         <ListItem>
-                            <Link href={"https://github.com/yuuuudini"} target={"_blank"}>
+                            <NextLink href={"https://github.com/yuuuudini"} target={"_blank"}>
                                 <Button variant={"ghost"} colorScheme={"teal"} leftIcon={<Icon as={IoLogoGithub}/>}>
                                     @yuuuudini
                                 </Button>
-                            </Link>
+                            </NextLink>
                         </ListItem>
                         <ListItem>
-                        <Link href={"https://instagram.com/yuuuudini"} target={"_blank"}>
-                            <Button variant={"ghost"} colorScheme={"teal"} leftIcon={<Icon as={IoLogoInstagram}/>}>
-                                @yuuuudini
-                            </Button>
-                        </Link>
-                    </ListItem>
+                            <NextLink href={"https://instagram.com/yuuuudini"} target={"_blank"}>
+                                <Button variant={"ghost"} colorScheme={"teal"} leftIcon={<Icon as={IoLogoInstagram}/>}>
+                                    @yuuuudini
+                                </Button>
+                            </NextLink>
+                        </ListItem>
                         <ListItem>
-                            <Link href={"https://www.discordapp.com/users/294916935546830849"} target={"_blank"} disable={true}>
+                            <NextLink href={"https://www.discordapp.com/users/294916935546830849"} target={"_blank"}
+                                  disable={true}>
                                 <Button variant={"ghost"} colorScheme={"teal"} leftIcon={<Icon as={IoLogoDiscord}/>}>
                                     yuuuudini#0001
                                 </Button>
-                            </Link>
+                            </NextLink>
                         </ListItem>
 
                     </List>

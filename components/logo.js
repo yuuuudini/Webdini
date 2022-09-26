@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import {Text, useColorModeValue} from "@chakra-ui/react";
 import styled from '@emotion/styled'
+import "@fontsource/press-start-2p"
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -26,10 +27,9 @@ const Logo = () => {
                     <Image src={logo} width={50} height={50} alt={"logo"}/>
                     <Text
                         color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-                        fontFamily={'Monocraft'}
-                        fontSize={25}
-                        fontWeight={"bold"}
-                        ml={3}
+                        fontFamily={"'Press Start 2P'"}
+                        fontSize={30}
+                        ml={2}
                         mt={4}
                     >
 

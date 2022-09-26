@@ -9,7 +9,7 @@ import thumbManim from '../public/images/works/manimthumb.png'
 const Works = () => {
     return (
         <Layout>
-            <Container>
+            <Container maxW={'900px'}>
                 <Divider useColor margin={"15px"}/>
                 <Heading as={"h3"} fontSize={20} mb={4}>
                     Works
